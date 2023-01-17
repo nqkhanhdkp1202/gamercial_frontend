@@ -1,0 +1,59 @@
+// css header
+
+.header {
+    z-index: 100;
+    height: var(--height-header);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    transition: $t $cubic;
+    .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        .header__logo {
+            transform: translate(-50%);
+            height: 100%;
+            overflow: hidden;
+            img {
+                height: 100%;
+            }
+        }
+        .header__menu {
+            color: $white-cl;
+            font-size: 20px;
+            font-family: bsb;
+            display: flex;
+            align-items: center;
+            &-img {
+                max-width: 30%;
+                img {
+                    transition: $t $cubic;
+                }
+            }
+            &:hover {
+                img {
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+        .header__language {
+            &-current {
+                cursor: pointer;
+                font-family: bb;
+                color: $white-cl;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    &.show {
+        background-color: $primary-cl;
+        height: 64px;
+    }
+}
