@@ -112,51 +112,52 @@ article {
     &.--h1 {
         font-size: var(--h1-fs);
         line-height: var(--h1-lh);
-        font-family: sb;
     }
     &.--h2 {
         font-size: var(--h2-fs);
         line-height: var(--h2-lh);
-        font-family: sb;
     }
     &.--h3 {
         font-size: var(--h3-fs);
         line-height: var(--h3-lh);
-        font-family: sb;
     }
 }
 
 .company {
-    color: $primary-cl;
+    color: $pink-cl;
     font-family: beb;
 }
 
 .btnmain {
-    font-size: 16px;
+    font-size: 22px;
     color: $white-cl;
     padding: 8px 56px;
-    border: 2px solid $yellow-cl;
+    border: 2px solid $white-cl;
+    border-radius: 4px;
     background-color: transparent;
-    font-family: beb;
+    font-family: sb;
     transition: $t $cubic;
     cursor: pointer;
     &:hover {
-        background-color: $yellow-cl;
+        background-color: $white-cl;
+        color: $pink-cl;
     }
 }
 
 .btnprimary {
-    font-size: 16px;
-    color: $yellow-cl;
+    font-size: 22px;
+    border-radius: 8px;
+    color: $white-cl;
     padding: 8px 56px;
     border: 2px solid $pink-cl;
     background-color: $pink-cl;
     letter-spacing: 0.2rem;
-    font-family: bsb;
+    font-family: sb;
     transition: $t $cubic;
     cursor: pointer;
     &:hover {
-        opacity: 0.7;
+        background-color: transparent;
+        color: $pink-cl;
     }
 }
 
@@ -166,7 +167,6 @@ article {
     border: none;
     border-bottom: 1px solid $gray-cl;
     background-color: transparent;
-    font-size: 24px;
     outline: 2px solid transparent;
     outline-offset: 2px;
 }
@@ -174,10 +174,10 @@ article {
 .line-before {
     content: "";
     display: block;
-    width: 72px;
+    width: 56px;
     margin-right: 12px;
-    height: 1px;
-    background-color: $bg-main;
+    height: 2px;
+    background-color: $pink-cl;
 }
 
 .title {
@@ -190,30 +190,6 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
-// .cursor {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     z-index: 9999999;
-//     width: 0;
-//     height: 0;
-//     pointer-events: none;
-//     mix-blend-mode: difference;
-//     transition: $t $cubic;
-//     .cursor-outer {
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         .cursor-inner {
-//             background-color: $white-cl;
-//             width: px;
-//             height: 56px;
-//             border-radius: 50%;
-//             opacity: 0.8;
-//         }
-//     }
-// }
 
 .totop {
     position: fixed;
@@ -231,5 +207,85 @@ input::-webkit-inner-spin-button {
     }
     &.active {
         display: block;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    position: relative;
+    box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.62);
+    -webkit-box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.62);
+    &__img {
+        height: 0;
+        padding-bottom: 320px;
+        position: relative;
+        img {
+            position: absolute;
+            max-width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+    &__content {
+        z-index: 15;
+        padding: 20px;
+        color: $black-cl;
+        &-name {
+            font-size: 20px;
+            margin-bottom: 8px;
+            font-family: beb;
+        }
+        &-desc {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        &-action {
+            float: right;
+            font-size: 12px;
+            font-family: beb;
+        }
+    }
+
+    .overlay {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $pink-cl;
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        transition: $t $cubic;
+        z-index: 10;
+    }
+
+    &:hover {
+        .card__content {
+            &-name {
+                color: $white-cl;
+                font-size: 42px;
+                line-height: 40px;
+                margin-bottom: 12px;
+                transition: $t $cubic;
+            }
+        }
+        .overlay {
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            opacity: 0.7;
+        }
+    }
+    &:nth-child(2),
+    &:nth-child(5) {
+        .overlay {
+            background-color: $purple-cl;
+        }
+        flex-direction: column-reverse;
+    }
+    &:nth-child(3),
+    &:nth-child(6) {
+        .overlay {
+            background-color: $yellow-cl;
+        }
     }
 }

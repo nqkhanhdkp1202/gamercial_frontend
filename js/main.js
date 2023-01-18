@@ -33,8 +33,7 @@ const cursorRounded = document.querySelector('.cursor-outer');
 
 //Back to top
 function btnBackClick() {
-    const btnback = document.querySelector('.totop'),
-        btntotop = document.querySelector('.btn-back')
+    const btnback = document.querySelector('.totop');
     window.addEventListener('scroll', function () {
         let scrollY = window.pageYOffset;
         let height = document.body.offsetHeight;
@@ -52,11 +51,24 @@ function btnBackClick() {
             behavior: "smooth"
         })
     })
-    btntotop.addEventListener('click', function () {
-        window.scrollTo({
-            'top': 0,
-                        behavior: "smooth"
-        })
-    })
 }
 btnBackClick();
+
+function handleSliderScroll() {
+    var scroll = document.querySelector('.sctrust__list');
+    var flktySlider = new Flickity(scroll, {
+        // options
+        prevNextButtons: false,
+        cellAlign: 'left',
+        freeScroll: true,
+        pageDots:false,
+        wrapAround: true
+    });
+    console.log(flktySlider);
+    // flktySlider.on('scroll', function (progress) {
+    //     progressbar.style.width = progress * 100 + '%'
+    // });
+
+}
+
+handleSliderScroll();

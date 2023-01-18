@@ -28,8 +28,6 @@ $pink-cl: #da667d;
 $purple-cl: #9759be;
 $bg-main: #222222;
 $bg-primary: #ff2e4d;
-$main-cl: #ff2e4d;
-$primary-cl: #3355a7;
 
 $gradient-cl: linear-gradient(180deg, #df1cff 0%, #814bf6 50.55%, #00bcff 100%);
 
@@ -69,7 +67,7 @@ $cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
 
     --gap: 60px; // gap này sử dụng cho gap cột & padding của container, container-fluid
 
-    --height-header: 80px;
+    --height-header: 70px;
     --height-button: 56px;
     --ptop: 150px;
     --pd-section: 120px;

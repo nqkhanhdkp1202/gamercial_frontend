@@ -15,10 +15,11 @@ html {
     font-size: 62.5%; // => 10px = 1rem
 }
 body {
+    background-image: url(../../../img/bg.png);
     width: 100%;
     max-width: $container-max-width;
     margin: auto;
-    @include text(var(--body16-fs), br, var(--body16-lh), $black-cl, none); // tuỳ chỉnh
+    @include text(var(--body16-fs), br, var(--body16-lh), $pink-cl, none); // tuỳ chỉnh
     position: relative;
     .container-fluid {
         width: 100%;
