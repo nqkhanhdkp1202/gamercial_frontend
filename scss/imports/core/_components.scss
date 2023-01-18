@@ -112,15 +112,17 @@ article {
     &.--h1 {
         font-size: var(--h1-fs);
         line-height: var(--h1-lh);
+        font-family: sb;
     }
     &.--h2 {
         font-size: var(--h2-fs);
         line-height: var(--h2-lh);
+        font-family: sb;
     }
     &.--h3 {
         font-size: var(--h3-fs);
         line-height: var(--h3-lh);
-        font-family: fw;
+        font-family: sb;
     }
 }
 
@@ -132,25 +134,25 @@ article {
 .btnmain {
     font-size: 16px;
     color: $white-cl;
-    padding: 8px 48px;
-    border: 2px solid $primary-cl;
+    padding: 8px 56px;
+    border: 2px solid $yellow-cl;
     background-color: transparent;
     font-family: beb;
     transition: $t $cubic;
     cursor: pointer;
     &:hover {
-        background-color: $primary-cl;
+        background-color: $yellow-cl;
     }
 }
 
 .btnprimary {
     font-size: 16px;
-    color: $white-cl;
-    padding: 8px 48px;
-    border: 2px solid $primary-cl;
-    background-color: $primary-cl;
-    color: $white-cl;
-    font-family: beb;
+    color: $yellow-cl;
+    padding: 8px 56px;
+    border: 2px solid $pink-cl;
+    background-color: $pink-cl;
+    letter-spacing: 0.2rem;
+    font-family: bsb;
     transition: $t $cubic;
     cursor: pointer;
     &:hover {

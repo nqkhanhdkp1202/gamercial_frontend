@@ -22,6 +22,10 @@ $black-cl: #000;
 $gray-cl: #737373;
 $red-cl: #d81f1f;
 $blue-cl: #00afab;
+$yellow-cl: #f7d454;
+$orange-cl: #e98537;
+$pink-cl: #da667d;
+$purple-cl: #9759be;
 $bg-main: #222222;
 $bg-primary: #ff2e4d;
 $main-cl: #ff2e4d;
@@ -40,13 +44,13 @@ $cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
 
     // font-size & line-height heading
 
-    --h1-fs: 7.2rem;
+    --h1-fs: 8.2rem;
     --h1-lh: 8rem;
 
-    --h2-fs: 5.2rem;
+    --h2-fs: 6.2rem;
     --h2-lh: 6rem;
 
-    --h3-fs: 3.2rem;
+    --h3-fs: 4.2rem;
     --h3-lh: 4.2rem;
 
     --h4-fs: 2.4rem;
@@ -65,7 +69,7 @@ $cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
 
     --gap: 60px; // gap này sử dụng cho gap cột & padding của container, container-fluid
 
-    --height-header: 72px;
+    --height-header: 80px;
     --height-button: 56px;
     --ptop: 150px;
     --pd-section: 120px;

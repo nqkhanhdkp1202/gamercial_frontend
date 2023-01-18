@@ -14,36 +14,37 @@
 <body>
     <header class="header">
         <div class="container-fluid">
-            <a href="#" class="header__menu">
-                <div class="header__menu-img">
+            <a href="#" class="header__logo">
+                <div class="header__logo-img">
                     <img src="./img/logo_gamercial_symbol.png" alt="">
                 </div>
-                <div class="header__menu-text">
-                    MENU
-                </div>
             </a>
-            <a href="./" class="header__logo">
-                <img src="./img/logo_gamercial_text.png" alt="">
-            </a>
-            <div class="header__language">
-                <a href="#" class="header__language-current">
-                    EN
-                </a>
-                <div class="header__language-option"></div>
-            </div>
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#" class="item-link">Trang chủ</a></li>
+                <li class="header__menu-item"><a href="#" class="item-link">Dịch vụ</a></li>
+                <li class="header__menu-item"><a href="#" class="item-link">Sản phẩm</a></li>
+                <li class="header__menu-item"><a href="#" class="item-link">Về GAMERCIAL</a></li>
+            </ul>
+            <button class="btnprimary btn-contact">LIÊN HỆ</button>
         </div>
     </header>
     <main>
         <section class="schero">
-            <video class="schero__video" src="./videos/bg-video.mp4" autoplay muted></video>
+            <video class="schero__video" src="./videos/bg_video.mp4" autoplay muted></video>
             <div class="scroll-alert">
                 <div class="line">
                     <span class="line-scroll"></span>
                 </div>
                 <p>CUỘN XUỐNG</p>
             </div>
+        </section>
+
+        <section class="scdesc">
             <div class="container-fluid">
-                <button class="btnmain btn-contact">LIÊN HỆ</button>
+                <h2 class="heading --h2">GAMERCIAL là cầu nối mang giải pháp công nghệ thế hệ mới đến với doanh nghiệp
+                    trong và ngoài nước.GAMERCIAL là cầu nối mang giải pháp công nghệ thế hệ mới đến với doanh nghiệp
+                    trong và ngoài nước.</h2>
+                <button class="btnprimary btn-more">TÌM HIỂU THÊM</button>
             </div>
         </section>
 
@@ -69,11 +70,26 @@
 
         <section class="scservices">
             <div class="container-fluid">
-                <div class="scsevices__heading title">
-                    <div class="line-before"></div>
+                <div class="scservices__heading">
                     <h3 class="heading --h3">WHAT WE OFFER ?</h3>
+                    <p>GAMERCIAL cung cấp giải pháp công nghệ tương lai
+                    </p>
                 </div>
                 <div class="scservices__content">
+                    <div class="scservices__content-list">
+                        <a href="#" class="item">
+                            <img src="./img/interact.jpg" alt="" class="overlay">
+                            <h3 class="heading">Công nghệ <br> tương tác</h3>
+                        </a>
+                        <a href="#" class="item">
+                            <img src="./img/software.jpg" alt="" class="overlay">
+                            <h3 class="heading">Công nghệ <br> phần mềm</h3>
+                        </a>
+                        <a href="#" class="item">
+                            <img src="./img/game.jpg" alt="" class="overlay">
+                            <h3 class="heading">Công nghệ <br> trò chơi </h3>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -94,7 +110,7 @@
             </div>
         </section>
 
-        <section class="scabout">
+        <!-- <section class="scabout">
             <div class="container-fluid">
                 <div class="scsevices__heading title">
                     <div class="line-before"></div>
@@ -114,7 +130,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="sccontact">
             <div class="container-fluid">
