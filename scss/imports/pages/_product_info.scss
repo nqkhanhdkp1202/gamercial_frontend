@@ -1,0 +1,50 @@
+.productinfo {
+    .line-before {
+        background-color: $black-cl;
+    }
+    color: $black-cl;
+    .scarticle {
+        padding: 120px 0px 80px 0px;
+        img {
+            display: block;
+            margin: 24px auto;
+        }
+    }
+
+    .scimages {
+        padding: 80px 0;
+    }
+
+    .screlated {
+        padding: 80px 0;
+        &__grid {
+            margin-top: 40px;
+            display: grid;
+            grid-gap: 24px;
+            grid-template-columns: 1fr 1fr;
+            &-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                img {
+                    width: 40%;
+                }
+                .desc {
+                    width: 58%;
+                    .type {
+                        font-size: 18px;
+                        color: $gray-cl;
+                    }
+                    .name {
+                        font-size: 24px;
+                        font-family: beb;
+                        margin: 8px 0;
+                    }
+                    .btnmore {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
